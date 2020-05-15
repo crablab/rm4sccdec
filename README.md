@@ -11,7 +11,7 @@ No pyenv included, but requirements are in `requirements.txt`
 
 Royal Mail use what is known as the State Customer Code (or Customer Bar Code) to identify mail in automatic sorting machines. 
 
-The also use a variant of this known as Datalink-C and Datalink-L to encode sorting and OCR address data on mail, during sortation and delivery. 
+The also use a variant of this known as Mailmark-C and Mailmark-L to encode sorting and OCR address data on mail, during sortation and delivery. 
 
 More information from [Wikipedia](https://en.wikipedia.org/wiki/RM4SCC)
 
