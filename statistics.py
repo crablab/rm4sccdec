@@ -9,7 +9,7 @@ def getFeatures(contours):
     """Extract the relevant features from the list of contours given and return them"""
     features = map(processing.getAreaAndCentroid, contours)
     # Use x-position to sort, and then get rid of it
-    features.sort(key=lambda t: t[1])
+    features = sorted(features, key=lambda t: t[1])
     features = [(area, y) for (area, x, y) in features]
     features = np.array(features)
 

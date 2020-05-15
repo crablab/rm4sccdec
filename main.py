@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 from cv2 import imread
@@ -9,7 +9,7 @@ from rm4scc import RM4SCC
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print 'Usage: {} image_filename.ext'.format(sys.argv[0])
+        print('Usage: {} image_filename.ext'.format(sys.argv[0]))
 
     img = imread(sys.argv[1])
     processed = processing.prepareImage(img)
@@ -20,5 +20,5 @@ if __name__ == '__main__':
 
     symbols, centroids = statistics.classifySymbols(features, initial_centroids)
 
-    codeword = RM4SCC.decodeSymbols(symbols)
-    print codeword
+    codeword = RM4SCC.decodeSymbols(list(symbols))
+    print(codeword)
