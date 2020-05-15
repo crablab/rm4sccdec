@@ -1,4 +1,4 @@
-# rm4sccdec
+# rm4sccdec for Python 3
 ## Decoder for the RM4SCC (Royal Mail 4-State Customer Code)
 
 Based on the original work from [cfax in Python 2.7](https://github.com/cfax/rm4sccdec). 
