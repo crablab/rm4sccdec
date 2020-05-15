@@ -7,6 +7,14 @@ This version is a fork brought up to date and running on Python 3.
 
 No pyenv included, but requirements are in `requirements.txt` 
 
+## What is it? 
+
+Royal Mail use what is known as the State Customer Code (or Customer Bar Code) to identify mail in automatic sorting machines. 
+
+The also use a variant of this known as Datalink-C and Datalink-L to encode sorting and OCR address data on mail, during sortation and delivery. 
+
+More information from [Wikipedia](https://en.wikipedia.org/wiki/RM4SCC)
+
 ## Install
 
 - Use Pip to install dependencies: `pip install -r requirements.txt`
