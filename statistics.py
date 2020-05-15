@@ -1,8 +1,7 @@
 import numpy as np
 from scipy.cluster.vq import kmeans2
 
-import processing
-from rm4scc import RM4SCC
+from rm4sccdec import rm4scc, processing
 
 
 def getFeatures(contours):
@@ -49,6 +48,6 @@ def classifySymbols(features, initial_centroids):
         if d > d_mean + 3*d_std:
             labels = np.delete(labels, idx)
 
-    symbols = map(lambda i: RM4SCC.symbols[i], labels)
+    symbols = map(lambda i: rm4scc.RM4SCC.symbols[i], labels)
 
     return symbols, centroids

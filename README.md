@@ -18,6 +18,8 @@ More information from [Wikipedia](https://en.wikipedia.org/wiki/RM4SCC)
 ## Install
 
 - Use Pip to install dependencies: `pip install -r requirements.txt`
-- Run the code: `python3 main.py image.png` 
+- Import the library: `from rm4sccdec import converter`
+- Instantiate the class: `cbc_conv = converter.converter()`
+- Decode your image: `decoded_data = cbc_conv.decode("myimage.png")`
 
 You need to specify the image you'd like to decode. In response, you will get the raw string data (including the checksum). 
